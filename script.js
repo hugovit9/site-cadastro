@@ -33,10 +33,16 @@ registro.addEventListener('submit', function(e) {
 });
 
 function confirmarSenhaIgual(input1, input2) {
+  if (input1.value.trim() === '' || input2.value.trim() === '') {
+    erro(input2, 'Confirmação de senha é obrigatória.');
+    return false;
+  }
+
   if (input1.value !== input2.value) {
     erro(input2, 'Senhas não são iguais.');
     return false;
   }
+
   sucesso(input2);
   return true;
 }
