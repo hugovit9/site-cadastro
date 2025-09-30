@@ -7,27 +7,29 @@ const confirmeSenha = document.getElementById("confirmeSenha");
 registro.addEventListener('submit', function(e) {
   e.preventDefault();
 
-  let eValido = verificarPreencher([nome, email, senha, confirmeSenha]);
+  // Validações básicas (campo vazio)
+  const camposPreenchidos = verificarPreencher([nome, email, senha, confirmeSenha]);
+
+  // Validações específicas
+  const nomeValido = contador(nome, 3, 46);
+  const emailValido = confirmeEmail(email);
+  const senhaValida = contador(senha, 6, 25);
+  const senhaValidaIgual = confirmarSenhaIgual(senha, confirmeSenha);
+
+  // Resultado final (só é válido se TODAS passarem)
+  const eValido = camposPreenchidos && nomeValido && emailValido && senhaValida && senhaValidaIgual;
 
   if (eValido) {
-    const nomeValido = contador(nome, 3, 46);
-    const emailValido = confirmeEmail(email);
-    const senhaValida = contador(senha, 6, 25);
-    const senhaValidaIgual = confirmarSenhaIgual(senha, confirmeSenha);
+    alert('Registrado com sucesso!');
+    registro.reset();
 
-    eValido = nomeValido && emailValido && senhaValida && senhaValidaIgual;
+    // reseta os estilos
+    document.querySelectorAll('.form-group').forEach(grupo => {
+      grupo.className = 'form-group';
+      const small = grupo.querySelector('small');
+      if (small) small.innerText = '';
+    });
   }
-
-if (eValido) {
-  alert('Registrado com sucesso!');
-  registro.reset();
-  
-  document.querySelectorAll('.form-group').forEach(grupo => {
-    grupo.className = 'form-group';
-    const small = grupo.querySelector('small');
-    if (small) small.innerText = '';
-  });
-}
 });
 
 function confirmarSenhaIgual(input1, input2) {
@@ -70,8 +72,6 @@ function verificarPreencher(inputArray) {
     if (input.value.trim() === '') {
       erro(input, `${formato(input)} é necessário`);
       valido = false;
-    } else {
-      sucesso(input);
     }
   });
 
