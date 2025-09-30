@@ -18,12 +18,16 @@ registro.addEventListener('submit', function(e) {
     eValido = nomeValido && emailValido && senhaValida && senhaValidaIgual;
   }
 
-  if (eValido) {
-    alert('Registrado com sucesso!');
-    registro.reset()
-  } document.querySelectorAll('.form-group').forEach(grupo => {
+if (eValido) {
+  alert('Registrado com sucesso!');
+  registro.reset();
+  
+  document.querySelectorAll('.form-group').forEach(grupo => {
     grupo.className = 'form-group';
+    const small = grupo.querySelector('small');
+    if (small) small.innerText = '';
   });
+}
 });
 
 function confirmarSenhaIgual(input1, input2) {
