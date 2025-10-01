@@ -21,11 +21,7 @@ site-cadastro/
 │── backend/
 │ │── server.js # Servidor Node.js
 │ │── package.json # Dependências do projeto
-<<<<<<< HEAD
-│── frontend/   
-=======
 │── frontend/
->>>>>>> 604458d53d4537be1be6847dec1bc4bed720a542
 │ │── index.html # Formulário de cadastro
 │ │── style.css # Estilos do formulário
 │ │── script.js # Lógica do front-end
