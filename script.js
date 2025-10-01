@@ -1,6 +1,6 @@
 
-// Exemplo: const API_URL = "https://meu-servidor-api.onrender.com";
-const API_URL = "URL_DA_API_RENDER";
+
+const API_URL = "https://site-cadastro-o9ix.onrender.com";
 
 const registro = document.getElementById("registro");
 const nome = document.getElementById("nome");
@@ -30,7 +30,7 @@ registro.addEventListener('submit', function(e) {
             senha: senha.value
         };
 
-        // >>> MUDANÇA CRUCIAL AQUI: Usando a constante API_URL <<<
+        
         fetch(`${API_URL}/usuarios`, {
             method: "POST",
             headers: {
