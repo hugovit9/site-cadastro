@@ -1,14 +1,28 @@
-Lançamento da Página de Registro de Conta
+# 📝 Sistema de Cadastro de Usuários
 
+Este é um projeto simples de cadastro de usuários feito com **Node.js**, **Express** e **MongoDB Atlas**.  
+O sistema recebe dados do formulário (nome, email e senha) e armazena no banco de dados.
 
-Este projeto demonstra a implementação básica e funcional de um formulário de cadastro, com foco em:
+---
 
-Estrutura Semântica: HTML limpo e acessível.
+## 🚀 Tecnologias usadas
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [MongoDB Atlas](https://www.mongodb.com/atlas/database)
+- [Mongoose](https://mongoosejs.com/)
+- [Cors](https://www.npmjs.com/package/cors)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
 
-Design Responsivo: Estilização básica via CSS, garantindo usabilidade em diferentes dispositivos.
+---
 
-Validação de Dados: Utilização de JavaScript para validação client-side dos campos (e-mail, senha, etc.), otimizando a experiência do usuário e a integridade da entrada de dados.
+## 📂 Estrutura do projeto
 
-O objetivo é fornecer um modelo robusto e direto para o desenvolvimento de formulários de autenticação front-end.
-
-https://hugovit9.github.io/site-cadastro/
+site-cadastro/
+│── backend/
+│ │── server.js # Servidor Node.js
+│ │── package.json # Dependências do projeto
+│ │── .env.example # Exemplo de variáveis de ambiente
+│── frontend/
+│ │── index.html # Formulário de cadastro
+│ │── style.css # Estilos do formulário
+│ │── script.js # Lógica do front-end
