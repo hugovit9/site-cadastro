@@ -21,7 +21,6 @@ site-cadastro/
 │── backend/
 │ │── server.js # Servidor Node.js
 │ │── package.json # Dependências do projeto
-│ │── .env.example # Exemplo de variáveis de ambiente
 │── frontend/
 │ │── index.html # Formulário de cadastro
 │ │── style.css # Estilos do formulário
