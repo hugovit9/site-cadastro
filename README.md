@@ -17,6 +17,7 @@ O sistema recebe dados do formulário (nome, email e senha) e armazena no banco 
 
 ## 📂 Estrutura do projeto
 
+<<<<<<< HEAD
 site-cadastro/ <br>
 │── backend/ <br>
 │ │── server.js # Servidor Node.js <br>
@@ -26,3 +27,13 @@ site-cadastro/ <br>
 │ │── index.html # Formulário de cadastro<br>
 │ │── style.css # Estilos do formulário<br>
 │ │── script.js # Lógica do front-end<br>
+=======
+site-cadastro/
+│── backend/
+│ │── server.js # Servidor Node.js
+│ │── package.json # Dependências do projeto
+│── frontend/
+│ │── index.html # Formulário de cadastro
+│ │── style.css # Estilos do formulário
+│ │── script.js # Lógica do front-end
+>>>>>>> b69bc6a03969b5a5b852c562c79afcc3fef23d3d
