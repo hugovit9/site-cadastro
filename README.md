@@ -1,6 +1,6 @@
 # 📝 Sistema de Cadastro de Usuários
 
-Este é um projeto simples de cadastro de usuários feito com **Node.js**, **Express** e **MongoDB Atlas**.  
+Este é um projeto simples de cadastro de usuários feito com **Node.js**, **Express**, **MongoDB Atlas** e **Render**.  
 O sistema recebe dados do formulário (nome, email e senha) e armazena no banco de dados.
 
 ---
@@ -12,7 +12,7 @@ O sistema recebe dados do formulário (nome, email e senha) e armazena no banco 
 - [Mongoose](https://mongoosejs.com/)
 - [Cors](https://www.npmjs.com/package/cors)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
-
+- [Render](https://render.com/)
 ---
 
 ## 📂 Estrutura do projeto
